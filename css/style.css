@@ -1,0 +1,725 @@
+/* FUENTES EN ESTE PROYECTO */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bebas+Neue&family=Merriweather:wght@300&family=Mukta&family=Playfair+Display&display=swap');
+
+/* Eliminar márgenes */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* Para eliminar todos los valores por defecto que traen los botones de redireccionamiento. */
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white
+}
+
+/* PALETA DE COLORES PARA ESTE PROYECTO */
+
+/* --pale-pink: #ebd8dcff;
+--bitter-lime: #c7fc36ff;
+--baby-pink: #f2ccc3ff;
+--onyx: #313638ff; */
+/* ----------------- */
+
+/* --HEADER-- */
+header {
+    background-color: #f2ccc3ff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* ---Row superior con mensaje--- */
+
+.top {
+    background-color: #c7fc36ff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.top img {
+    height: 25px;
+    width: auto;
+    padding: 3px 0px 0px 15px;
+
+}
+
+.top p {
+    padding: 15px 0rem 0rem;
+    font-size: large;
+    padding-left: 40%;
+}
+
+/*  Buscador y Logo */
+
+.middle {
+    display: flex;
+    flex-wrap: row nowrap;
+    height: auto;
+    padding: 0.5rem 0 0.5rem 0;
+    max-width: 90%;
+}
+
+.busquedaHeader {
+    height: auto;
+    align-self: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 5rem;
+    margin-left: -20rem;
+}
+
+
+.inputB {
+    display: flex;
+    align-items: center;
+
+}
+
+.inputB input,
+textarea {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    border: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.inputB svg {
+    width: 25px;
+    margin-left: -35px;
+}
+
+.logo {
+    text-align: center !important;
+}
+
+.logo img {
+    width: 100%
+}
+
+.lupa {
+    display: none;
+}
+
+/* --Nav-- */
+
+#nav {
+    width: 100%;
+    background-color: #f2ccc3ff !important;
+    height: auto;
+    padding-bottom: 0.5rem;
+    padding-left: 15%;
+
+}
+
+#nav ul li {
+
+    display: inline-block;
+    font-size: 22px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #c7fc36ff !important;
+}
+
+/* Newsletter */
+.newsletter {
+    height: 11rem;
+    width: 100%;
+    background-color: #c7fc36ff;
+    padding: 1rem 0rem 1rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.newsletter h4 {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.newsletter p {
+    font-size: 1.25rem;
+    font-family: 'Merriweather', serif;
+}
+
+.input {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.input input,
+textarea {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center !important;
+    border: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.input svg {
+    width: 25px;
+    margin-left: -30px;
+    z-index: 0;
+}
+
+/* Botón de What'sapp */
+.btnWhatsapp {
+    display: block;
+    width: 25px;
+    position: fixed;
+    right: 40px;
+    bottom: 70px;
+}
+
+.btnWhatsapp img {
+    width: 50px;
+}
+
+/* --FOOTER-- */
+footer {
+    background-color: #f2ccc3ff;
+    width: auto;
+    height: 8.5rem;
+    padding: 10px 10px 20px 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 1.25rem;
+
+}
+
+footer h4 {
+    font-family: 'Merriweather', serif;
+    padding-bottom: 1rem;
+}
+
+/*+++++++++++++++++ INDEX ++++++++++++++++*/
+
+/* MAIN */
+main {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Valores de la marca */
+
+.valoresPadre {
+    background-color: #ebd8dcff;
+    width: 100%;
+    height: 6rem;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.valoresHijo {
+    background-color: white;
+    border: 1px #c7fc36ff solid;
+    width: 16rem;
+    height: 4.5rem;
+}
+
+.valoresHijo p {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    padding-left: 60px;
+    position: relative;
+    bottom: 3.75rem;
+}
+
+.valoresHijo img {
+    width: 27%;
+    padding-left: 0.5rem;
+    bottom: 5px;
+}
+
+/* Productos del Inicio */
+
+.partesIndex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.seccionIndex {
+    background-color: #f2ccc3ff;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+    color: #c7fc36ff;
+    text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
+}
+
+.seccionIndex h3 {
+    font-size: 4rem !important;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.seccionIndex p {
+
+    font-size: 1rem;
+    color: black;
+    font-family: 'Merriweather', serif;
+}
+
+.productosIndex {
+    background-color: #ebd8dcff;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.productosIndex img {
+    width: 30%;
+    box-shadow: 0.2em 0.2em 0.2em rgb(206, 195, 195);
+    border-radius: 3rem;
+    border: 3px dotted #c7fc36ff;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.descripcionProd {
+    background-color: #ebd8dcff;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0.5rem;
+}
+
+
+/* +++++++++++++ CONTACTO +++++++++++++ */
+
+.contenedorF {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.formulario {
+    border: none;
+    max-width: 80%;
+
+}
+
+.formulario fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 1px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+
+.formulario input {
+    border: 1px solid #c7fc36ff;
+}
+
+.formulario input,
+textarea {
+    border: 1px #c7fc36ff dotted
+}
+
+
+/* UBICACIÓN */
+#mainUbicacion {
+    background-color: #ebd8dcff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.ubicacion {
+    margin: 10px;
+    text-align: center;
+    color: #c7fc36ff;
+    font-size: 1.5rem;
+    text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
+}
+
+.ubicacion iframe {
+    max-width: 95%;
+}
+
+.ubicacion p {
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    color: black;
+    margin: 10px;
+}
+
+/* Preguntas frecuentes */
+
+#mainP {
+    width: auto;
+    background-color: #ebd8dcff;
+    padding: 10px;
+}
+
+.preguntas {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.preguntas h1 {
+    text-align: center;
+    color: #c7fc36ff;
+    font-size: 3rem;
+    text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
+}
+
+.preguntas ol li {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    margin: 0.75rem;
+}
+
+/* Productos */
+
+.contenedorGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    padding: 1rem;
+}
+
+.imgGrid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animaciones, Transiciones y Gradientes */
+
+/* HEADER */
+
+.top p {
+    animation: top 10s linear 1s infinite normal none;
+}
+
+@keyframes top {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
+}
+
+.nav ul li a {
+    transition: font-size 1s ease 0s;
+}
+
+.nav ul li a:hover {
+    font-size: 24px;
+}
+
+.newsletter h4 {
+    animation: newsLetter 10s ease 0s infinite alternate both;
+}
+
+@keyframes newsLetter {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
+/* INDEX */
+
+.productosIndex img:hover {
+    height: 32%;
+    width: 32%;
+    transition: width 0.5s linear 0s, height 0.5s linear 0s;
+}
+
+/* PRODUCTOS */
+
+.imgGrid:hover {
+    filter: saturate(200%) drop-shadow(5px 5px 10px #000);
+}
+
+
+/* Grid */
+
+.bodyPadreGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    grid-template-areas:
+        "header "
+        "carr "
+        "val "
+        "main "
+        "news "
+        "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+
+#carouselExampleControls {
+    grid-area: carr;
+}
+
+.valoresPadre {
+    grid-area: val;
+}
+
+.main {
+    grid-area: main;
+}
+
+.newsletter {
+    grid-area: news;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:900px) {
+    .top {
+        display: none;
+    }
+
+
+
+    .busquedaHeader {
+        width: 10%;
+        margin: 10px;
+        margin-right: 10rem;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    #nav {
+        max-width: 90%;
+        justify-content: center;
+    }
+
+    #nav ul li {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: large;
+    }
+
+
+    @media screen and (max-width:830px) {
+        body {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:650px) {
+
+        .logo img {
+            width: 80%;
+        }
+
+
+        .nav ul li {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: medium;
+        }
+
+    }
+
+
+    @media screen and (max-width:564px) {
+
+        body {
+            width: 100%;
+        }
+
+        .logo img {
+            width: 70%;
+        }
+
+        .busquedaHeader {
+            display: none;
+        }
+
+        .inputB {
+            display: none;
+        }
+
+        .lupa {
+            width: 3.5rem;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        #nav {
+            justify-content: flex-start;
+            margin-left: -10px;
+        }
+
+        .foto1 {
+            display: none;
+        }
+
+        .foto3 {
+            display: none;
+
+        }
+
+        .foto2 {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #carouselExampleControls {
+            height: auto;
+        }
+
+        .valoresPadre {
+            display: block;
+            height: auto;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .valoresHijo {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin: 0 auto;
+        }
+
+        .seccionIndex {
+            height: auto;
+            padding-bottom: 0.5rem;
+        }
+
+        .productosIndex img {
+            display: block;
+            width: 95%;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+
+        }
+
+        .descripcionProd {
+            display: none;
+        }
+
+        .contenedorGrid {
+            justify-content: center;
+        }
+
+        .newsletter {
+            height: auto;
+        }
+
+        .contenedorF {
+            justify-content: flex-start;
+        }
+    }
