@@ -1,9 +1,7 @@
 /*FUENTES*/
 @import "https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bebas+Neue&family=Merriweather:wght@300&family=Mukta&family=Playfair+Display&display=swap";
 
-@import "header", "footer", "newsletter", "variables", "grid";
-
-
+@import "variables", "grid", "header", "footer", "newsletter";
 
 /*ANIMACIONES Y TRANCISIONES*/
 
@@ -91,13 +89,13 @@ a {
 /*INDEX*/
 
 main {
-	font-family: 'Bebas Neue', cursive;
+	font-family: $bebas;
 }
 .valoresPadre {
-	background-color: #ebd8dcff;
+	background-color: $lila;
 	width: 100%;
 	height: 6rem;
-	font-family: 'Bebas Neue', cursive;
+	font-family: $bebas;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
@@ -106,7 +104,7 @@ main {
 }
 .valoresHijo {
 	background-color: white;
-	border: 1px #c7fc36ff solid;
+	border: 1px $verde solid;
 	width: 16rem;
 	height: 4.5rem;
 	p {
@@ -134,31 +132,31 @@ main {
 	width: 100%;
 	height: 8rem;
 	text-align: center;
-	color: #c7fc36ff;
+	color: $verde;
 	text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
 	h3 {
 		font-size: 4rem !important;
-		font-family: 'Bebas Neue', cursive;
+		font-family: $bebas;
 	}
 	p {
 		font-size: 1rem;
 		color: black;
-		font-family: 'Merriweather', serif;
+		font-family: $merri;
 	}
 }
 .productosIndex {
-	background-color: #ebd8dcff;
+	background-color: $lila;
 	width: 100%;
 	height: auto;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	text-align: center;
-	font-family: 'Merriweather', serif;
+	font-family: $merri;
 	img {
 		width: 30%;
 		box-shadow: 0.2em 0.2em 0.2em rgb(206, 195, 195);
 		border-radius: 3rem;
-		border: 3px dotted #c7fc36ff;
+		border: 3px dotted $verde;
 		margin-left: 0.5rem;
 		margin-right: 0.5rem;
 		&:hover {
@@ -170,9 +168,9 @@ main {
 }
 
 .descripcionProd {
-	background-color: #ebd8dcff;
+	background-color: $lila;
 	width: 100%;
-	font-family: 'Merriweather', serif;
+	font-family: $merri;
 	display: flex;
 	justify-content: space-evenly;
 	padding-bottom: 0.5rem;
@@ -204,14 +202,14 @@ main {
 		border-image: initial;
 	}
 	input {
-		border: 1px solid #c7fc36ff;
-		border: 1px #c7fc36ff dotted;
+		border: 1px solid $verde;
+		border: 1px $verde dotted;
 	}
 }
 
 /*UBICACIÓN*/
 #mainUbicacion {
-	background-color: #ebd8dcff;
+	background-color:$lila;
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -221,14 +219,14 @@ main {
 .ubicacion {
 	margin: 10px;
 	text-align: center;
-	color: #c7fc36ff;
+	color: $verde;
 	font-size: 1.5rem;
 	text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
 	iframe {
 		max-width: 95%;
 	}
 	p {
-		font-family: 'Merriweather', serif;
+		font-family: $merri;
 		font-size: 1.25rem;
 		color: black;
 		margin: 10px;
@@ -238,7 +236,7 @@ main {
 /*FAQ*/
 #mainP {
 	width: auto;
-	background-color: #ebd8dcff;
+	background-color: $lila;
 	padding: 10px;
 }
 .preguntas {
@@ -246,13 +244,13 @@ main {
 	margin: 0 auto;
 	h1 {
 		text-align: center;
-		color: #c7fc36ff;
+		color: $verde;
 		font-size: 3rem;
 		text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
 	}
 	ol {
 		li {
-			font-family: 'Merriweather', serif;
+			font-family: $merri;
 			font-size: 1rem;
 			margin: 0.75rem;
 		}

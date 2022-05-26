@@ -1,7 +1,7 @@
 .newsletter {
 	height: 11rem;
 	width: 100%;
-	background-color: #c7fc36ff;
+	background-color: $verde;
 	padding: 1rem 0rem 1rem 0;
 	display: flex;
 	flex-flow: column nowrap;
@@ -10,7 +10,7 @@
 	grid-area: news;
 	h4 {
 		color: black;
-		font-family: 'Bebas Neue', cursive;
+		font-family: $bebas;
 		font-size: 3rem;
 		text-align: center;
 		padding-top: 0.5rem;
@@ -18,7 +18,7 @@
 	}
 	p {
 		font-size: 1.25rem;
-		font-family: 'Merriweather', serif;
+		font-family: $merri;
 	}
 }
 .input {
@@ -32,7 +32,7 @@
 		border-radius: 15px;
 		text-align: center !important;
 		border: 0;
-		font-family: 'Merriweather', serif;
+		font-family: $merri;
 	}
 	svg {
 		width: 25px;

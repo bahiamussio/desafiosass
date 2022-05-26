@@ -1,5 +1,5 @@
 header {
-	background-color: #f2ccc3ff;
+	background-color: $rosa;
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -10,7 +10,7 @@ header {
 }
 
 .top {
-	background-color: #c7fc36ff;
+	background-color: $verde;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
@@ -78,7 +78,7 @@ textarea {
 	text-align: center !important;
 	border: 0;
 	font-family: 'Merriweather', serif;
-	border: 1px #c7fc36ff dotted;
+	border: 1px $verde dotted;
 }
 
 .logo {
@@ -92,7 +92,7 @@ textarea {
 }
 #nav {
 	width: 100%;
-	background-color: #f2ccc3ff !important;
+	background-color: $rosa !important;
 	height: auto;
 	padding-bottom: 0.5rem;
 	padding-left: 15%;
@@ -108,20 +108,8 @@ textarea {
 .nav-link {
 	color: white !important;
 	&:hover {
-		color: #c7fc36ff !important;
+		color: $verde !important;
 	}
 }
 
-.nav {
-	ul {
-		li {
-			a {
-				transition: font-size 1s ease 0s;
-				&:hover {
-					font-size: 24px;
-				}
-			}
-		}
-	}
-}
 
