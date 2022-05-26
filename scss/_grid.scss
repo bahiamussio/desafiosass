@@ -1,0 +1,34 @@
+.contenedorGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 1em;
+	padding: 1rem;
+}
+.imgGrid {
+	img {
+		width: 100%;
+		height: auto;
+	}
+	&:hover {
+		filter: saturate(200%) drop-shadow(5px 5px 10px #000);
+	}
+}
+
+.bodyPadreGrid {
+	display: grid;
+	grid-template-columns: 100%;
+	justify-content: center;
+	grid-template-areas: "header ""carr ""val ""main ""news ""footer";
+}
+.header {
+	grid-area: header;
+}
+#carouselExampleControls {
+	grid-area: carr;
+}
+.main {
+	grid-area: main;
+}
+.footer {
+	grid-area: footer;
+}
