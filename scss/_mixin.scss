@@ -1,0 +1,14 @@
+@mixin parrafos {
+    font-family: $bebas;
+    font-size: 1.25rem;
+    color: black !important;
+    margin: 10px;
+    text-align: center;
+}
+
+@mixin hache4 {
+    font-family: $merri;
+	font-size: 17px;
+	text-align: center;
+	color: white;
+}

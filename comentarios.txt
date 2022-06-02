@@ -1,0 +1,29 @@
+En el archivo "index.html" sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta "meta name description", agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Tienda oficial de h.a.r, accesorios 100% hechos a mano, libres de crueldad animal, originales y lleno de amor."
+Palabras clave: mediante la etiqueta "meta name keywords", agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ACCESORIOS, HANDMADE, CRUELTYFREE, MODA"
+Encabezado: para el encabezado del h1 utilicé el texto “h.a.r”
+
+En el archivo "ubicacion.html" sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta "meta name description", agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:"Ubicación de tienda oficial de h.a.r, accesorios 100% hechos a mano, libres de crueldad animal, originales y lleno de amor.
+Palabras clave: mediante la etiqueta "meta name keywords", agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ACCESORIOS, HANDMADE, CRUELTYFREE, MODA"
+Encabezado: para el encabezado del h1 utilicé el texto “♥ DÓNDE ENCONTRARNOS ♥”
+
+En el archivo "ubicacion.html" sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta "meta name description", agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:"Catálogo de productos de la tienda oficial de h.a.r, accesorios 100% hechos a mano, libres de crueldad animal, originales y lleno de amor".
+Palabras clave: mediante la etiqueta "meta name keywords", agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ACCESORIOS, HANDMADE, CRUELTYFREE, MODA"
+Encabezado: para el encabezado del h1 utilicé el texto “♥ NUESTROS PRODUCTOS ♥”
+
+En el archivo "preguntasfrecuentes.html" sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta "meta name description", agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Preguntas frecuentes en la tienda oficial de h.a.r, accesorios 100% hechos a mano, libres de crueldad animal, originales y lleno de amor."
+Palabras clave: mediante la etiqueta "meta name keywords", agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ACCESORIOS, HANDMADE, CRUELTYFREE, MODA"
+Encabezado: para el encabezado del h1 utilicé el texto “♥ PREGUNTAS FRECUENTES ♥”
+
+En el archivo "contacto.html" sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta "meta name description", agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Contacto de tienda oficial de h.a.r, accesorios 100% hechos a mano, libres de crueldad animal, originales y lleno de amor."
+Palabras clave: mediante la etiqueta "meta name keywords", agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ACCESORIOS, HANDMADE, CRUELTYFREE, MODA"
+Encabezado: para el encabezado del h1 utilicé el texto “♥ CONTACTATE CON NOSOTROS ♥”
+
+En el archivo "carrito.html" sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta "meta name description", agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Tu carrio de compras en tienda oficial de h.a.r, accesorios 100% hechos a mano, libres de crueldad animal, originales y lleno de amor."
+Palabras clave: mediante la etiqueta "meta name keywords", agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ACCESORIOS, HANDMADE, CRUELTYFREE, MODA"
+Encabezado: para el encabezado del h1 utilicé el texto “♥ TU CARRITO ♥”

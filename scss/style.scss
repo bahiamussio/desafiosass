@@ -1,7 +1,7 @@
 /*FUENTES*/
 @import "https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Bebas+Neue&family=Merriweather:wght@300&family=Mukta&family=Playfair+Display&display=swap";
 
-@import "variables", "grid", "header", "footer", "newsletter";
+@import "variables", "grid", "header", "footer", "newsletter", "maps", "mixin", "extend";
 
 /*ANIMACIONES Y TRANCISIONES*/
 
@@ -86,11 +86,19 @@ a {
 	}
 }
 
+/*MAIN*/
+
+.main {
+	h1 {
+			color: map-get($estiloH1, color);
+			font-size: map-get($estiloH1,tamFuente);
+		@extend .estiloHache1;
+	}
+
+}
+
 /*INDEX*/
 
-main {
-	font-family: $bebas;
-}
 .valoresPadre {
 	background-color: $lila;
 	width: 100%;
@@ -134,7 +142,7 @@ main {
 	text-align: center;
 	color: $verde;
 	text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
-	h3 {
+	h2 {
 		font-size: 4rem !important;
 		font-family: $bebas;
 	}
@@ -177,16 +185,16 @@ main {
 }
 
 /*CONTACTO*/
+
 .contenedorF {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	margin: 10px;
+	width: 20rem;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background-color: $lila;
 }
 .formulario {
 	border: none;
-	max-width: 80%;
+	max-width: 100%;
 	fieldset {
 		display: block;
 		margin-inline-start: 2px;
@@ -197,13 +205,17 @@ main {
 		padding-block-end: 0.625em;
 		min-inline-size: min-content;
 		border-width: 1px;
-		border-style: groove;
-		border-color: threedface;
+		border-style: none;
+		border-color: $rosa;
 		border-image: initial;
 	}
 	input {
 		border: 1px solid $verde;
 		border: 1px $verde dotted;
+		font-family: $merri;
+		font-size: 12px;
+		background-color: rgb(243, 240, 240);
+		
 	}
 }
 
@@ -218,18 +230,11 @@ main {
 }
 .ubicacion {
 	margin: 10px;
-	text-align: center;
-	color: $verde;
-	font-size: 1.5rem;
-	text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
-	iframe {
+		iframe {
 		max-width: 95%;
 	}
 	p {
-		font-family: $merri;
-		font-size: 1.25rem;
-		color: black;
-		margin: 10px;
+		@include parrafos;
 	}
 }
 
@@ -242,11 +247,6 @@ main {
 .preguntas {
 	width: 90%;
 	margin: 0 auto;
-	h1 {
-		text-align: center;
-		color: $verde;
-		font-size: 3rem;
-		text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
 	}
 	ol {
 		li {
@@ -255,7 +255,8 @@ main {
 			margin: 0.75rem;
 		}
 	}
-}
+
+/*CARRITO*/
 
 
 /*Medias Queries: Responsive*/
