@@ -227,6 +227,7 @@ a {
  	form {
 		border: none;
 		max-width: 90%;
+		margin-left: 0.5rem;
 			fieldset {
 			display: block;
 			margin-inline-start: 2px;
@@ -487,15 +488,24 @@ a {
 	.formulario {
 		max-width: 90%;
 	}
+	h1 {
+		font-size: 20px !important;
+		padding-top: 0.5rem;
+	}
+
 }
 
 @media screen and (max-width:319px) {
 	body {
 		width: 101%;
-		margin-top: -4rem;
+		margin-top: -3.5rem;
 	}
 	.formulario {
 		max-width: 90%;
+	}
+	h1 {
+		font-size: 20px !important;
+		padding-top: 0.5rem;
 	}
 	
 }
