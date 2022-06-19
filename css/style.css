@@ -94,23 +94,6 @@
     width: 25px;
     margin-left: -35px; }
 
-textarea {
-  width: 250px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-  border: 0;
-  font-family: 'Merriweather', serif;
-  width: 300px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center !important;
-  border: 0;
-  font-family: 'Merriweather', serif;
-  border: 1px #c7fc36ff dotted; }
-
 .logo {
   text-align: center !important; }
   .logo img {
@@ -377,38 +360,44 @@ a:active {
 
 /*CONTACTO*/
 .contenedorF {
-  width: 22rem;
+  width: 19rem;
   margin: 0 auto;
-  justify-content: center;
   margin-bottom: 10px;
   background-color: #ebd8dcff;
   font-family: "Bebas Neue", cursive;
-  text-align: center;
   max-width: 90%; }
-
-.formulario {
-  border: none;
-  max-width: 90%; }
-  .formulario fieldset {
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
-    min-inline-size: min-content;
-    border-width: 1px;
-    border-style: none;
-    border-color: #f2ccc3ff;
-    border-image: initial; }
-  .formulario input {
-    border: 1px solid #c7fc36ff;
-    border: 1px #c7fc36ff dotted;
-    font-family: "Merriweather", serif;
-    font-size: 12px;
-    background-color: #f3f0f0;
+  .contenedorF form {
+    border: none;
     max-width: 90%; }
+    .contenedorF form fieldset {
+      display: block;
+      margin-inline-start: 2px;
+      margin-inline-end: 2px;
+      padding-block-start: 0.35em;
+      padding-inline-start: 0.75em;
+      padding-inline-end: 0.75em;
+      padding-block-end: 0.625em;
+      min-inline-size: min-content;
+      border-width: 1px;
+      border-style: none;
+      border-color: #f2ccc3ff;
+      border-image: initial; }
+      .contenedorF form fieldset input {
+        border: 1px solid #c7fc36ff;
+        border: 1px #c7fc36ff dotted;
+        font-family: "Merriweather", serif;
+        font-size: 12px;
+        background-color: #f3f0f0;
+        max-width: 90%;
+        margin-left: 0.25rem; }
+      .contenedorF form fieldset textarea {
+        width: auto;
+        background-color: white;
+        border-radius: 15px;
+        border: 0;
+        font-family: "Merriweather", serif;
+        border: 1px #c7fc36ff dotted;
+        max-width: 80%; }
 
 /*UBICACIÓN*/
 #mainUbicacion {
@@ -562,4 +551,13 @@ ol li {
 @media screen and (max-width: 410px) {
   body {
     width: 100%;
-    margin-top: -4rem; } }
+    margin-top: -4rem; }
+  .formulario {
+    max-width: 90%; } }
+
+@media screen and (max-width: 319px) {
+  body {
+    width: 101%;
+    margin-top: -4rem; }
+  .formulario {
+    max-width: 90%; } }

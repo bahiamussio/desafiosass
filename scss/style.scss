@@ -218,42 +218,48 @@ a {
 /*CONTACTO*/
 
 .contenedorF {
-	width: 22rem;
+	width: 19rem;
 	margin: 0 auto;
-	justify-content: center;
 	margin-bottom: 10px;
 	background-color: $lila;
 	font-family: $bebas;
-	text-align: center;
 	max-width: 90%;
-
-}
-.formulario {
-	border: none;
-	max-width: 90%;
-	fieldset {
-		display: block;
-		margin-inline-start: 2px;
-		margin-inline-end: 2px;
-		padding-block-start: 0.35em;
-		padding-inline-start: 0.75em;
-		padding-inline-end: 0.75em;
-		padding-block-end: 0.625em;
-		min-inline-size: min-content;
-		border-width: 1px;
-		border-style: none;
-		border-color: $rosa;
-		border-image: initial;
-	}
-	input {
-		border: 1px solid $verde;
-		border: 1px $verde dotted;
-		font-family: $merri;
-		font-size: 12px;
-		background-color: rgb(243, 240, 240);
+ 	form {
+		border: none;
 		max-width: 90%;
-		
-	}
+			fieldset {
+			display: block;
+			margin-inline-start: 2px;
+			margin-inline-end: 2px;
+			padding-block-start: 0.35em;
+			padding-inline-start: 0.75em;
+			padding-inline-end: 0.75em;
+			padding-block-end: 0.625em;
+			min-inline-size: min-content;
+			border-width: 1px;
+			border-style: none;
+			border-color: $rosa;
+			border-image: initial;
+				input {
+				border: 1px solid $verde;
+				border: 1px $verde dotted;
+				font-family: $merri;
+				font-size: 12px;
+				background-color: rgb(243, 240, 240);
+				max-width: 90%;
+				margin-left: 0.25rem;
+		}
+				textarea {
+			width: auto;
+			background-color: white;
+			border-radius: 15px;
+			border: 0;
+			font-family: $merri;
+			border: 1px $verde dotted;
+			max-width: 80%;
+		}
+		}
+}
 }
 
 /*UBICACIÓN*/
@@ -478,4 +484,18 @@ a {
 		width: 100%;
 		margin-top: -4rem;
 	}
+	.formulario {
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width:319px) {
+	body {
+		width: 101%;
+		margin-top: -4rem;
+	}
+	.formulario {
+		max-width: 90%;
+	}
+	
 }
