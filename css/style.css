@@ -32,7 +32,11 @@
 .footer {
   grid-area: footer; }
 
-header {
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
   background-color: #f2ccc3ff;
   width: 100%;
   height: auto;
@@ -91,7 +95,7 @@ header {
     margin-left: -35px; }
 
 textarea {
-  width: 300px;
+  width: 250px;
   background-color: white;
   padding: 10px;
   border-radius: 15px;
@@ -110,7 +114,7 @@ textarea {
 .logo {
   text-align: center !important; }
   .logo img {
-    width: 100%; }
+    width: 80%; }
 
 .lupa {
   display: none; }
@@ -152,6 +156,7 @@ footer {
 .newsletter {
   height: 11rem;
   width: 100%;
+  margin: 0.25rem 0 0.5rem 0;
   background-color: #c7fc36ff;
   padding: 1rem 0rem 1rem 0;
   display: flex;
@@ -225,6 +230,8 @@ footer {
   padding: 0; }
 
 body {
+  margin: 0;
+  padding: 13.5rem 0 0 0;
   width: 100%; }
 
 /*Eliminar valores preestablecidos de los links*/
@@ -255,12 +262,13 @@ a:active {
 
 /*MAIN*/
 .main h1 {
-  color: #c7fc36ff;
+  color: black;
   font-size: 3rem; }
 
 /*INDEX*/
 .valoresPadre {
   background-color: #ebd8dcff;
+  margin: 0.5rem 0 0.5rem 0;
   width: 100%;
   height: 6rem;
   font-family: "Bebas Neue", cursive;
@@ -300,6 +308,8 @@ a:active {
   text-align: center;
   color: #c7fc36ff;
   text-shadow: 0.1em 0.1em 0.4em white; }
+  .seccionIndex h1 {
+    font-size: 4rem; }
   .seccionIndex h2 {
     font-size: 4rem !important;
     font-family: "Bebas Neue", cursive; }
@@ -310,6 +320,7 @@ a:active {
 
 .productosIndex {
   background-color: #ebd8dcff;
+  margin: 0.25rem 0 0.25rem 0;
   width: 100%;
   height: auto;
   padding-top: 1rem;
@@ -328,6 +339,34 @@ a:active {
       width: 32%;
       transition: width 0.5s linear 0s, height 0.5s linear 0s; }
 
+.botonPadre {
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem; }
+
+.botonHijo {
+  text-align: center; }
+  .botonHijo a {
+    margin-left: 9.75rem;
+    margin-right: 9.75rem;
+    background: #ebd8dcff;
+    width: 125px;
+    border: 1px solid #c7fc36ff;
+    /*anchura, estilo y color borde*/
+    padding: 10px;
+    /*espacio alrededor texto*/
+    background-color: white;
+    /*color botón*/
+    color: #f2ccc3ff;
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    font-family: "Bebas Neue", cursive;
+    /*tipografía texto*/
+    border-radius: 50px;
+    /*bordes redondos*/ }
+
 .descripcionProd {
   background-color: #ebd8dcff;
   width: 100%;
@@ -338,14 +377,18 @@ a:active {
 
 /*CONTACTO*/
 .contenedorF {
-  width: 20rem;
+  width: 22rem;
   margin: 0 auto;
+  justify-content: center;
   margin-bottom: 10px;
-  background-color: #ebd8dcff; }
+  background-color: #ebd8dcff;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  max-width: 90%; }
 
 .formulario {
   border: none;
-  max-width: 100%; }
+  max-width: 90%; }
   .formulario fieldset {
     display: block;
     margin-inline-start: 2px;
@@ -364,7 +407,8 @@ a:active {
     border: 1px #c7fc36ff dotted;
     font-family: "Merriweather", serif;
     font-size: 12px;
-    background-color: #f3f0f0; }
+    background-color: #f3f0f0;
+    max-width: 90%; }
 
 /*UBICACIÓN*/
 #mainUbicacion {
@@ -408,6 +452,8 @@ ol li {
     max-width: 90%; } }
 
 @media screen and (max-width: 900px) {
+  body {
+    margin: 0 auto; }
   .top {
     display: none; }
   .busquedaHeader {
@@ -422,31 +468,42 @@ ol li {
     #nav ul li {
       padding-left: 10px;
       padding-right: 10px;
-      font-size: large; } }
+      font-size: large; }
+  .botonPadre {
+    display: none; } }
 
 @media screen and (max-width: 830px) {
   body {
-    width: 100%; }
+    width: 100%;
+    margin-top: -3.75rem; }
   .valoresHijo p {
     font-size: 1.5rem;
-    padding-top: 17px; } }
+    padding-top: 17px; }
+  .botonPadre {
+    display: none; } }
 
 @media screen and (max-width: 650px) {
   body {
-    size: 100%; }
+    size: 100%;
+    margin-top: -2rem; }
   .logo img {
     width: 80%; }
   .nav ul li {
     padding-left: 10px;
     padding-right: 10px;
     font-size: medium; }
+  .botonPadre {
+    display: none; }
   .valoresHijo p {
     font-size: 1.4rem;
-    padding-top: 2rem; } }
+    padding-top: 2rem; }
+  .botonPadre {
+    display: none; } }
 
 @media screen and (max-width: 564px) {
   body {
-    width: 100%; }
+    width: 100%;
+    margin-top: -3rem; }
   .logo img {
     width: 70%; }
   .busquedaHeader {
@@ -493,7 +550,7 @@ ol li {
     width: 95%;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem; }
-  .descripcionProd {
+  .botonPadre {
     display: none; }
   .contenedorGrid {
     justify-content: center; }
@@ -501,3 +558,8 @@ ol li {
     height: auto; }
   .contenedorF {
     justify-content: flex-start; } }
+
+@media screen and (max-width: 410px) {
+  body {
+    width: 100%;
+    margin-top: -4rem; } }

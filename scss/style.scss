@@ -48,7 +48,10 @@
 	margin: 0;
 	padding: 0;
 }
+
 body {
+	margin: 0;
+    padding: 13.5rem 0 0 0;
 	width: 100%;
 }
 
@@ -101,6 +104,7 @@ a {
 
 .valoresPadre {
 	background-color: $lila;
+	margin: 0.5rem 0 0.5rem 0;
 	width: 100%;
 	height: 6rem;
 	font-family: $bebas;
@@ -142,6 +146,9 @@ a {
 	text-align: center;
 	color: $verde;
 	text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
+	h1 {
+		font-size: 4rem;
+	}
 	h2 {
 		font-size: 4rem !important;
 		font-family: $bebas;
@@ -154,6 +161,7 @@ a {
 }
 .productosIndex {
 	background-color: $lila;
+	margin: 0.25rem 0 0.25rem 0;
 	width: 100%;
 	height: auto;
 	padding-top: 1rem;
@@ -175,6 +183,29 @@ a {
 	}
 }
 
+.botonPadre {
+	margin-bottom: 0.75rem;
+	margin-top: 1.5rem;
+}
+
+.botonHijo {
+	text-align: center;
+	a {
+		margin-left: 9.75rem;
+		margin-right: 9.75rem;
+	background: $lila;
+	width: 125px;	
+	border: 1px solid $verde; /*anchura, estilo y color borde*/
+	padding: 10px; /*espacio alrededor texto*/
+	background-color: white; /*color botón*/
+	color: $rosa; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	text-transform: uppercase; /*capitalización texto*/
+	font-family: $bebas; /*tipografía texto*/
+	border-radius: 50px; /*bordes redondos*/
+}
+}
+
 .descripcionProd {
 	background-color: $lila;
 	width: 100%;
@@ -187,14 +218,19 @@ a {
 /*CONTACTO*/
 
 .contenedorF {
-	width: 20rem;
+	width: 22rem;
 	margin: 0 auto;
+	justify-content: center;
 	margin-bottom: 10px;
 	background-color: $lila;
+	font-family: $bebas;
+	text-align: center;
+	max-width: 90%;
+
 }
 .formulario {
 	border: none;
-	max-width: 100%;
+	max-width: 90%;
 	fieldset {
 		display: block;
 		margin-inline-start: 2px;
@@ -215,6 +251,7 @@ a {
 		font-family: $merri;
 		font-size: 12px;
 		background-color: rgb(243, 240, 240);
+		max-width: 90%;
 		
 	}
 }
@@ -267,6 +304,9 @@ a {
 }
 
 @media screen and (max-width:900px) {
+	body {
+		margin: 0 auto;
+	}
 	.top {
 		display: none;
 	}
@@ -291,11 +331,15 @@ a {
 			}
 		}
 	}
+	.botonPadre {
+		display: none;
+	}
 }
 
 	@media screen and (max-width:830px) {
 		body {
-             width: 100%
+             width: 100%;
+			 margin-top: -3.75rem;
             }
         .valoresHijo {
             p {
@@ -303,11 +347,17 @@ a {
                 padding-top: 17px;
             }
         }
-    }
+    	.botonPadre {
+			display: none;
+		}
+
+	}
+
 
 @media screen and (max-width:650px) {
     body {
         size: 100%;
+		margin-top: -2rem;
     }
     .logo {
 		img {
@@ -323,17 +373,25 @@ a {
 			}
 		}
 	}
+	.botonPadre {
+		display: none;
+	}
+
     .valoresHijo {
         p {
             font-size: 1.4rem;
             padding-top: 2rem;
         }
     }
+	.botonPadre {
+		display: none;
+	}
 }
 
 @media screen and (max-width:564px) {
 	body {
 		width: 100%;
+		margin-top: -3rem;
 	}
 	.logo {
 		img {
@@ -401,7 +459,7 @@ a {
 			margin-bottom: 0.5rem;
 		}
 	}
-	.descripcionProd {
+	.botonPadre {
 		display: none;
 	}
 	.contenedorGrid {
@@ -412,5 +470,12 @@ a {
 	}
 	.contenedorF {
 		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width:410px) {
+	body {
+		width: 100%;
+		margin-top: -4rem;
 	}
 }
