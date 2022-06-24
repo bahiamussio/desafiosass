@@ -91,12 +91,12 @@ a {
 
 /*MAIN*/
 
-.tiendaOficial {
+main{ 
 	h1 {
 			color: map-get($estiloH1, color);
 			font-size: 1.75rem;
-		@extend .estiloHache1;
-		background-color: $verde;
+			@extend .estiloHache1;
+			background-color: $verde;
 	}
 
 
@@ -198,14 +198,14 @@ a {
 		margin-right: 9.75rem;
 	background: $lila;
 	width: 125px;	
-	border: 1px solid $verde; /*anchura, estilo y color borde*/
-	padding: 10px; /*espacio alrededor texto*/
-	background-color: white; /*color botón*/
-	color: $rosa; /*color texto*/
-	text-decoration: none; /*decoración texto*/
-	text-transform: uppercase; /*capitalización texto*/
-	font-family: $bebas; /*tipografía texto*/
-	border-radius: 50px; /*bordes redondos*/
+	border: 1px solid $verde;
+	padding: 10px; 
+	background-color: white; 
+	color: $rosa; 
+	text-decoration: none;
+	text-transform: uppercase; 
+	font-family: $bebas; 
+	border-radius: 50px; 
 }
 }
 
@@ -271,17 +271,23 @@ a {
 	background-color:$lila;
 	width: 100%;
 	height: auto;
-	display: flex;
-	justify-content: center;
-	align-content: center;
+
 }
 .ubicacion {
-	margin: 10px;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 		iframe {
-		max-width: 95%;
+		max-width: 90%;
 	}
-	p {
+		p {
 		@include parrafos;
+	}
+	h1 {
+		width: 100%;
 	}
 }
 
@@ -497,11 +503,25 @@ a {
 	}
 
 }
-
-@media screen and (max-width:319px) {
+@media screen and (max-width:378) {
 	body {
 		width: 101%;
-		margin-top: -3.5rem;
+		margin-top: -5rem;
+	}
+	.formulario {
+		max-width: 90%;
+	}
+	h1 {
+		font-size: 20px !important;
+		padding-top: 0.5gitrem;
+	}
+
+}
+
+@media screen and (max-width:330px) {
+	body {
+		width: 101%;
+		margin-top: -4.25rem;
 	}
 	.formulario {
 		max-width: 90%;
