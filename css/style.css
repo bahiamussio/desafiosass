@@ -175,7 +175,7 @@ footer {
     margin-left: -30px;
     z-index: 0; }
 
-.estiloHache1, .main h1 {
+.estiloHache1, .tiendaOficial h1 {
   text-align: center;
   text-shadow: 0.1em 0.1em 0.4em white;
   font-family: "Bebas Neue", cursive; }
@@ -244,9 +244,10 @@ a:active {
     filter: alpha(opacity=70) !important; }
 
 /*MAIN*/
-.main h1 {
+.tiendaOficial h1 {
   color: black;
-  font-size: 3rem; }
+  font-size: 1.75rem;
+  background-color: #c7fc36ff; }
 
 /*INDEX*/
 .valoresPadre {
@@ -557,7 +558,7 @@ ol li {
     max-width: 90%; }
   h1 {
     font-size: 20px !important;
-    padding-top: 0.5rem; } }
+    padding-top: 0.5gitrem; } }
 
 @media screen and (max-width: 319px) {
   body {

@@ -35,7 +35,7 @@
 	}
 	30%,50%,70% {
 		transform: rotate(4deg);
-	}
+	}	
 	80% {
 		transform: rotate(-2deg);
 	}
@@ -91,14 +91,17 @@ a {
 
 /*MAIN*/
 
-.main {
+.tiendaOficial {
 	h1 {
 			color: map-get($estiloH1, color);
-			font-size: map-get($estiloH1,tamFuente);
+			font-size: 1.75rem;
 		@extend .estiloHache1;
+		background-color: $verde;
 	}
 
+
 }
+
 
 /*INDEX*/
 
@@ -490,7 +493,7 @@ a {
 	}
 	h1 {
 		font-size: 20px !important;
-		padding-top: 0.5rem;
+		padding-top: 0.5gitrem;
 	}
 
 }

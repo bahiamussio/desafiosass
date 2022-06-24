@@ -1,7 +1,7 @@
 En el archivo "index.html" sumé el SEO con las siguientes características:
 Descripción: mediante la etiqueta "meta name description", agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Tienda oficial de h.a.r, accesorios 100% hechos a mano, libres de crueldad animal, originales y lleno de amor."
 Palabras clave: mediante la etiqueta "meta name keywords", agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "ACCESORIOS, HANDMADE, CRUELTYFREE, MODA"
-Encabezado: no puse porque no tengo ninguna palabra que funcione como encabezado. En un principio había usado la sigla "h.a.r", pero no queda estético.
+Encabezado: Como encabezado utilicé "Tienda Oficial h.a.r"
 
 En el archivo "ubicacion.html" sumé el SEO con las siguientes características:
 Descripción: mediante la etiqueta "meta name description", agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:"Ubicación de tienda oficial de h.a.r, accesorios 100% hechos a mano, libres de crueldad animal, originales y lleno de amor.
